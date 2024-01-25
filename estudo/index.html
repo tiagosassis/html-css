@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="shortcut icon" href="/html-css/documentation/midia/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section id="html">
+            <h1>Documentação HTML</h1>
+                <p>As tags semânticas nos ajudam a estruturar o conteúdo da nossa página de uma forma lógica e significativa, permitindo que leitores de tela, por exemplo, possam identificar facilmente o que é um título, um parágrafo ou uma lista.</p>
+                <p>A documentação oficial pode ser vista no site <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="external">w3schools</a></p>
+                
+                <h2>Texto e Formatação</h2>
+                <h3>Textos</h3>
+                <dl>
+            <dt><code>&lt;p&gt; &lt;/p&gt;</code></dt>
+            <dd>Tag para criar um parágrafo</dd>
+                </dl>
+                <h3>Títulos</h2>
+                <dl>
+            <dt><code>&lt;h1&gt; &lt;/h1&gt;</code></dt>
+            <dd>Tag HTML responsável por definir o cabeçalho ou título de uma página</dd>
+            <dt><code>&lt;h2&gt;</code> a <code>&lt;h6&gt;</code></dt>
+            <dd>Tag HTML responsável por definir o subcabeçalho ou subtítulo de uma página</dd>
+                </dl>
+                <h3>Formatação</h3>
+                <dl>
+            <dt><code>&lt;br&gt;</code></dt>
+            <dd>Quebra de linha</dd>
+            <dt><code>&lt;strong&gt; &lt;/strong&gt;</code></dt>
+            <dd>Negrito</dd>
+            <dt><code>&lt;em&gt; &lt;/em&gt;</code></dt>
+            <dd>Itálico ou Ênfase</dd>
+            <dt><code>&lt;span&gt; &lt;/span&gt;</code></dt>
+            <dd>É um conteiner generico em linha para conteúdo fraseado, que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id )</dd>
+            <dt><code>&lt;abbr title=""&gt;&lt;/abbr&gt;</code></dt>
+            <dd>Abreviação, onde em title pode ser colocado o significado da abreviação usada, como aqui em <abbr title="HyperText Markup Language">HTML</abbr></dd>
+                </dl>
+                <h2>Imagens</h2>
+                <img src="midia/images/html-250.png" alt="logo do html5">
+                <dl>
+            <dt><code>&lt;img src="caminho ou url" alt="texto alternativo"&gt;</code></dt>
+            <dd>
+                <p>A tag <code>img</code> é responsável por adicionar imagens a uma página, esta tag tem 2 propriedades.</p>
+                <p><code>src=""</code> que recebe o caminho da imagem, podendo ser um caminho para um diretório local ou URL para web, este caminho deve também conter a extenção do arquivo</p>
+                <p><code>alt=""</code> que recebe um texto alternativo para a imagem caso ele não apareça, importante caso algum problema ocorra</p>
+            </dd>
+            <dt><code>link:favicon</code></dt>
+            <dd>
+                <p>A tag <code>link:favicon</code> é responsável pela adição de um ícone na aba do site, este ícone deve ser do tipo .ico</p>
+                <p>É aconselhavel que o nome do ícone seja favicon</p>
+            </dd>
+                </dl>
+                <h2>Áudio e Vídeo</h2>
+                <dl>
+            <dt><h3>Áudio</h3></dt>
+            <dd>
+                <audio controls loop preload="metadata">
+                    <source src="midia/audio/tom-petty-love-is-a-long-road.mp3" type="audio/mpeg">
+                </audio>
+                <p>
+            <pre>
+<code>
+    &lt;audio controls loop preload="metadata"&gt;
+        &lt;source src="midia/audio/tom-petty-love-is-a-long-road.mp3" type="audio/mpeg"&gt;
+    &lt;/audio&gt;
+</code>
+            </pre>  
+                </p>
+                <p><code>&lt;audio src="midia/audio/tom-petty-love-is-a-long-road.mp3" controls loop preload="metadata" &gt;&lt;/audio&gt;</code></p>
+                <p><code>controls</code> é necessário para que o client consiga controlar a reprodução do áudio</p>
+                <p><code>preload</code> é usado para carregar algumas informações importantes sobre o conteúdo</p>
+                <p><code>loop</code> mantem o áudio si repetindo sempre que acabar a reprodução</p>
+                <p><code>src</code> é necessário para inserirmos o caminho para o conteúdo que queremos reproduzir</p>
+            </dd>
+            <dt><h3>Vídeo Hospedado Localmente</h3></dt>
+            <dd>
+                <video src="midia/video/meu-video.mp4" controls loop preload="metadata" width="560"></video>
+                <p><code>&lt;video src="midia/video/meu-video.mp4" controls loop preload="metadata" &gt;&lt;/video&gt;</code></p>
+                <p><code>controls</code> é necessário para que o client consiga controlar a reprodução do video</p>
+                <p><code>preload</code> é usado para carregar algumas informações importantes sobre o conteúdo</p>
+                <p><code>loop</code> mantem o video si repetindo sempre que acabar a reprodução</p>
+                <p><code>src</code> é necessário para inserirmos o caminho para o conteúdo que queremos reproduzir</p>
+            </dd>
+            <dt><h3>Vídeo Hospedado externamente</h3></dt>
+            <dd>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QdBZY2fkU-0?si=evJp8yzVZ3ud34YA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Quando o vídeo está em uma hospedagem externa, o proprio site já ofecere o código necessário para linkar o vídeo ao site</p>
+            </dd>
+                </dl>
+                <h2>Link's ou Âncoras</h2>
+                <dl>
+            <dt>
+                <code>&lt;a href="URL" target="" rel="" download="" type=""&gt; texto ou imagem &lt;/a&gt;</code>
+            </dt>
+            <dd>
+                <p>O trecho <code>href=""</code> recebe a URL para o qual o link aponta</p>
+                <p>O trecho <code>target=""</code> recebe um valor que pode variar entre _blank ou _selft ( padrão), com o valor _blank a página será aberta em uma nova guia, já com o valor padrão _self a página será aberta na guia atual</p>
+                <p>O trecho <code>rel=""</code> indicará ao motor de busca que o link é para outro site ou se é para um site de mesmo autor, ou até mesmo para uma página anterior ou adiante do mesmo documento, ou seja, se é <code>external, author, prev, next</code></p>
+                <p>Este trecho <code>download=""</code> indicará o caminho e nome do arquivo para download</p>
+                <p>Este trecho <code>type=""</code> indicará o caminho e nome do arquivo para download, o tipo de arquivo deve ser consultado em <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external"> iana.org</a></p>
+            </dd>
+                </dl>
+            
+                <h2>Listas</h2>
+                <dl>
+            <dt>Listas Ordenadas</dt>
+            <dd>
+            <div class="short_code code">
+                <pre>
+                    <code>
+&lt;ol&gt;
+    &lt;li&gt; item de lista &lt;/li&gt;
+&lt;/ol&gt;
+                    </code>
+                </pre>
+            </div>
+            </dd>
+            <dt>Listas Desordenadas</dt>
+            <dd>
+            <div class="short_code code">
+                <pre>
+                    <code>
+&lt;ul&gt;
+    &lt;li&gt; item de lista &lt;/li&gt;
+&lt;/ul&gt;
+                    </code>
+                </pre>
+            </div>
+            </dd>
+            <dt>Listas de Definição</dt>
+            <dd>
+            <div class="medium_code code">
+                <pre>
+                    <code>
+&lt;dl&gt;
+    &lt;di&gt; item de lista &lt;/di&gt;
+    &lt;dd&gt; definição do item &lt;/dd&gt;
+&lt;/dl&gt;
+                    </code>
+                    </pre>
+            </div>
+            </dd>
+                </dl>
+        </section>
+        <section id="css">
+            <h1>Documentação CSS</h1>
+            <p>A documentação oficial pode ser vista no site <a href="https://www.w3schools.com/css/" target="_blank">w3schools</a></p>
+            <h2>Diferença entre id e class</h2>
+            <h3>ID</h3>
+            <p>O identificador ID é utilizado para identificar tags, dessa forma, uma estílização pode ser feita específicamente para aquela tag HTML</p>
+            <p>Se mais de uma tag receber a mesma ID, apesar de funcionar normalmente, não é indicado como correto pelo w3schools, para estes casos é melhor utilizar classes</p>
+            <p>Uma outra característica importante do ID é que sua hierarquia é superior a da Class, ou sejá, se duas estilizações estiverem afetando um elemento da mesma forma, aquele que irá sobrepor é o que está contido no ID</p>
+            <div class="short_code code">
+                <pre>
+                    <span>HTML</span><code>
+&lt;p id="paragrafo"&gt;
+    texto
+&lt;/p&gt;
+                    </code>
+                </pre>
+            </div>
+            <div class="short_code code">
+                <pre>
+                    <span>CSS</span><code>
+#paragrafo{
+    background-color: #e5e5e5;
+    width: 300px;
+}
+                    </code>
+                </pre>
+            </div>
+
+            <h3>Class</h3>
+            <p>O identificador class é usado para identificar e estilizar uma ou mais tags em uma página</p>
+            <p>É importante não confundir a forma de utilizar o ID e Class no CSS, visto que o ID usa # e o Class usa um ponto</p>
+            <pre class="short_code code">
+                <span>HTML</span><code>
+&lt;p class="paragrafo"&gt;
+    texto
+&lt;/p&gt;
+            </code>
+            </pre>
+            <div class="short_code code">
+                <pre>
+                    <span>CSS</span><code>
+.paragrafo{
+    background-color: #e5e5e5;
+    width: 300px;
+}
+                    </code>
+                </pre>
+            </div>
+            <h2>Pseudo-Classes e Pseudo-Elementos</h2>
+            <p>Uma pseudo-classe e pseudo-elementos CSS é uma palavra-chave adicionada a seletores que especifica um <span>estado especial do elemento selecionado</span>.</p>
+            <p>Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.</p>
+            <h3>Pseudo-Classes</h3>
+            <div class="short_code code">
+                <pre>
+                    <span>CSS</span><code>
+.little_code:hover{
+    background-color: #bebebe;
+}
+                    </code>
+                </pre>
+            </div>
+            <h3>Pseudo-Elementos</h3>
+            <div class="short_code code">
+                <pre>
+                    <span>CSS</span><code>
+a::after{
+    content: " [link]";
+}
+                    </code>
+                </pre>
+            </div>
+            <h2>ShortHands</h2>
+            <p>As ShortHands são propriedades abreviativas no CSS que deixam você setar os valores de outras propriedades de CSS simultaneamente</p>
+            <div class="large_code code">
+                <pre>
+                    <span>CSS</span><code>
+div{
+    padding: 10px 15px 20px 50px;
+    /*
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    */
+}
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
