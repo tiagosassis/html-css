@@ -1,22 +1,19 @@
 @charset "utf-8";
 
-.quadrado{
-    border: 3px solid;
-    width: 300px;
-    height: 300px;
-    display: inline-block;
+body{
+    background-image: url('../images/wallpaper002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+main{
+    background-color: white;
+    max-width: 50%;
     border-radius: 10px;
-    background-color: lightgray;
-}
-
-#q1{
-    background-color: blueviolet;
-}
-
-#q2{
-    background-image: linear-gradient(to right, orange, red);
-}
-
-#q3{
-    background-image: url('../images/pattern001.png');
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.384);
+    padding: 15px;
+    margin: 0 auto;
 }
