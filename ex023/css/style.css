@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+main{
+    position: relative;
+    height: 96vh;
+    background-color: purple;
+    border: 1px solid black;
+    background-image: url("../images/target001.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+    background-image: url("../images/target001.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
