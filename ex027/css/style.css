@@ -10,7 +10,6 @@ body{
 }
 
 table{
-    width: 500px;
     margin: 50px auto;
     border-collapse: collapse;
 }
@@ -28,4 +27,8 @@ td, th{
 
 .destaque{
     text-align: left;
+}
+
+div#container{
+    overflow-x: auto;
 }
