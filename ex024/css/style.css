@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    color: white;
+    background-color: #1C2128;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid white;
+    padding: 12px;
+}
