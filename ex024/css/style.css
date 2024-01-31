@@ -16,13 +16,55 @@ h1{
     margin: 50px;
 }
 
+caption{
+    padding: 5px;
+    font-size: 1.1em;
+}
+
 table{
     width: 30vw;
-    margin: auto;
     border-collapse: collapse;
+    margin: 30px auto;
+    position: relative;
+}
+
+/* tbody tr:nth-child(odd){     Criar efeito zebrado em tabela 
+    background-color: #303844;
+     
+} */
+
+thead > tr > th{
+    position: sticky;
+    top: -1px;
 }
 
 td, th{
     border: 1px solid white;
     padding: 12px;
+}
+
+thead th, tfoot{
+    background-color: #0c0e11;
+}
+
+footer{
+    max-width: 96vw;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.number{
+    text-align: right;
 }
