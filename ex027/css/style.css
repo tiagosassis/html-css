@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table{
+    width: 500px;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+thead  th, .destaque{
+    font-weight: bold;
+    background-color: rgb(131, 131, 131);
+    color: white;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.destaque{
+    text-align: left;
+}
