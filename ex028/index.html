@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello World</title>
+</head>
+<body>
+    <main>
+        <h1>Iframes</h1>
+        <h2>Exibir códigos sem o uso de Iframes</h2>
+        <p>Temos algumas formas de fazer isso, umas delas é através do uso de algumas tags específicas, como a tag &lt;span&gt;, &lt;code&gt; e &lt;pre&gt;. O resultado abaixo é um código sem o uso da tag &lt;pre&gt; que tem como objetivo manter a pre formatação, como identação, como resultado temos um código bagunçado</p>
+    
+        <code>
+            &lt;code&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        item 1
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        item 2
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/code&gt;
+        </code>
+    
+        <p>Agora utilizando a tag &lt;pre&gt;</p>
+    
+        <code>
+<pre>
+&lt;pre&gt;
+    &lt;code&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                item 1
+            &lt;/li&gt;
+            &lt;li&gt;
+                item 2
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/code&gt;
+&lt;/pre&gt;
+</pre>
+        </code>
+
+    <p>Além disso algumas alterações podem ser feitas, como adição de uma div, com shadow box interno, padding e cor de fundo</p>
+
+    <div>
+        <pre>
+    padding: 5px;
+    box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.500);
+        </pre>
+    </div>
+
+    <h2>Exibir códigos com o uso de Iframes</h2>
+
+    <p>Aqui estou usando um iframe para abrir um arquivo de texto que contém o código, a desvantagem disso é não pode alterar as características visuais, como font, cor da letra e do fundo.</p>
+    <iframe src="codigo.txt" frameborder="0">Seu navegador não é compatível com isso</iframe>
+
+    <p>Neste segundo exemplo eu abri um arquivo .html externo que contém o código, dessa forma o iframe interpreta como um site e por isso ele é guiado pelas configurações de estilo dessa página</p>
+    <iframe src="codigo.html" frameborder="0">Seu navegador não é compatível com isso</iframe>
+    </main>
+</body>
+</html>
