@@ -10,13 +10,10 @@ html, body{
     background-color: lightgray;
 }
 
-header{
-    text-align: center;
-}
-
 header > h1{
     background-color: gray;
     padding: 10px;
+    text-align: center;
 }
 
 span#burguer{

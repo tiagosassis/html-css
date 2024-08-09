@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="resizePage()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav id="menu">
-            <a href="#" rel="noopener noreferrer">Opção 1</a>
-            <a href="#" rel="noopener noreferrer">Opção 2</a>
-            <a href="#" rel="noopener noreferrer">Opção 3</a>
-            <a href="#" rel="noopener noreferrer">Opção 4</a>
-            <a href="#" rel="noopener noreferrer">Opção 5</a>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
         </nav>
     </header>
     <main>
@@ -37,10 +38,19 @@
     <script>
         function clickMenu(){
             if(menu.style.display == 'block'){
-                menu.style.display = 'none';
+                menu.style.display = 'none'
             }else{
-                menu.style.display = 'block';
+                menu.style.display = 'block'
             }
+        }
+
+        function resizePage(){
+            if(window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }else{
+                menu.style.display = 'none'
+            }
+            
         }
     </script>
 
