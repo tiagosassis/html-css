@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    margin: auto;
+    width: 60vw;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #88609F , #A879A7);
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-variant: small-caps;
+    padding: 40px;
+}
+
+main{
+    display: flex;
+}
+
+div{
+    flex: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #FFB16E;
+}
